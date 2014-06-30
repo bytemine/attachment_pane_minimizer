@@ -7,13 +7,11 @@ $(document).ready(function() {
       $(window).resize();
     }
   });
-  $("#compose-attachments").find("div.ui-resizable-w").addClass("ui-icon");
-  $("#compose-attachments").find("div.ui-resizable-w").addClass("ui-icon-arrowthick-2-e-w");
   $("#compose-attachments").find("div.ui-resizable-w").css('cursor', 'w-resize');
-  $("#compose-attachments").find("div.ui-resizable-w").css('height', '15px');
+  $("#compose-attachments").find("div.ui-resizable-w").css('height', '100%');
   $("#compose-attachments").find("div.ui-resizable-w").css('left', '-2px');
-  $("#compose-attachments").find("div.ui-resizable-w").css('top', '12px');
   $("#compose-attachments").find("div.ui-resizable-w").css('width', '14px');
+  $("#compose-attachments").find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
 
   // the list of attachments at reading and forwarding
   var attlist = $("#attachment-list").parent();
@@ -36,13 +34,11 @@ $(document).ready(function() {
       }
     }
   });
-  attlist.find("div.ui-resizable-w").addClass("ui-icon");
-  attlist.find("div.ui-resizable-w").addClass("ui-icon-arrowthick-2-e-w");
   attlist.find("div.ui-resizable-w").css('cursor', 'w-resize');
-  attlist.find("div.ui-resizable-w").css('height', '15px');
+  attlist.find("div.ui-resizable-w").css('height', '100%');
   attlist.find("div.ui-resizable-w").css('left', '-2px');
-  attlist.find("div.ui-resizable-w").css('top', '12px');
   attlist.find("div.ui-resizable-w").css('width', '14px');
+  attlist.find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
   $("#attachment-list").css('margin-left', '4px');
   
 });
