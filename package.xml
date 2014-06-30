@@ -6,18 +6,18 @@
 	<name>attachment_pane_minimizer</name>
 	<channel>pear.roundcube.net</channel>
 	<summary>Hide attachment section</summary>
-	<description>A Roundcube plugin that hides the attachment pane on email composition by default.</description>
+	<description>A Roundcube plugin that makes the attachment panels user resizable.</description>
 	<lead>
 		<name>Daniel Rauer</name>
 		<user>dra</user>
 		<email>info@bytemine.net</email>
 		<active>yes</active>
 	</lead>
-	<date>2014-06-05</date>
+	<date>2014-06-30</date>
 	<time>09:30:00</time>
 	<version>
-		<release>1.0</release>
-		<api>1.0</api>
+		<release>1.1</release>
+		<api>1.1</api>
 	</version>
 	<stability>
 		<release>stable</release>
@@ -27,11 +27,6 @@
 	<notes>Repo only</notes>
 	<contents>
 		<dir baseinstalldir="/" name="/">
-			<file name="localization/de_CH.inc" role="data"/>
-			<file name="localization/de_DE.inc" role="data"/>
-			<file name="localization/en_CA.inc" role="data"/>
-			<file name="localization/en_GB.inc" role="data"/>
-			<file name="localization/en_US.inc" role="data"/>
 		</dir>
 		<!-- / -->
 	</contents>
