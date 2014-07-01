@@ -1,3 +1,9 @@
+// set maximum width of attachment panel to always reserve 240px for editor panel
+$(window).resize(function() {
+  $("#attachment-list").parent().resizable("option", "maxWidth", $('#composebody').width());
+  $("#compose-attachments").resizable("option", "maxWidth", $('#composebody').width());
+});
+
 $(document).ready(function() {
   // the list of attachments at composing
   $("#compose-attachments").resizable({ 
