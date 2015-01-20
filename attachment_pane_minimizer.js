@@ -4,8 +4,8 @@ $(window).resize(function() {
   $("#compose-attachments").resizable("option", "maxWidth", $('#composebody').width());
   $("#compose-attachments").resizable("option", "minWidth", 212);
   $("#compose-attachments").css('left', '');
-  $('#composebody').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-24+'px');
-  $('#composebodycontainer').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-24+'px');
+  $('#composebody').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
+  $('#composebodycontainer').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
 });
 
 $(document).ready(function() {
@@ -35,8 +35,8 @@ $(document).ready(function() {
     stop: function(e, ui) {
       $('#composebodycontainer').css('right', $('#compose-attachments').css('width'));
       $(window).resize();
-      $('#composebody').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-24+'px');
-      $('#composebodycontainer').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-24+'px');
+      $('#composebody').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
+      $('#composebodycontainer').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
     },
     resize: function(e, ui) {
       // trick to keep the list in shape, else resizing would also resize the left value
