@@ -2,7 +2,7 @@
 $(window).resize(function() {
   $("#attachment-list").parent().resizable("option", "maxWidth", $('#composebody').width());
   $("#compose-attachments").resizable("option", "maxWidth", $('#composebody').width());
-  $("#compose-attachments").resizable("option", "minWidth", 212);
+  $("#compose-attachments").resizable("option", "minWidth", 240);
   $("#compose-attachments").css('left', '');
   $('#composebody').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
   $('#composebodycontainer').css('width', $('#composeview-bottom').width()-$("#attachment-list").width()-25+'px');
@@ -21,12 +21,12 @@ $(document).ready(function() {
   $("#compose-attachments").find("div.ui-resizable-w").css('height', '100%');
   $("#compose-attachments").find("div.ui-resizable-w").css('left', '-2px');
   $("#compose-attachments").find("div.ui-resizable-w").css('width', '14px');
-  $("#compose-attachments").find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
+  //$("#compose-attachments").find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
 
-  $("#compose-attachments").css({position: 'absolute', top: '1px', right: '0px', width: '240px', height: '281px'});
+  $("#compose-attachments").css({position: 'absolute', top: '1px', right: '0px', width: '240px'});
   $("#compose-attachments").css('left', '');
-  $("#compose-attachments").css('min-width', '212px');
-  $("#compose-attachments").resizable("option", "minWidth", 212);
+  $("#compose-attachments").css('min-width', '240px');
+  $("#compose-attachments").resizable("option", "minWidth", 240);
 
   // the list of attachments at reading and forwarding
   var attlist = $("#attachment-list").parent();
@@ -49,7 +49,7 @@ $(document).ready(function() {
   attlist.find("div.ui-resizable-w").css('height', '100%');
   attlist.find("div.ui-resizable-w").css('left', '-2px');
   attlist.find("div.ui-resizable-w").css('width', '14px');
-  attlist.find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
+  //attlist.find("div.ui-resizable-w").css({"background-image": "url(plugins/attachment_pane_minimizer/arrow-grey.png)", 'background-repeat': 'no-repeat'});
   $("#attachment-list").css('margin-left', '4px');
 
 });
